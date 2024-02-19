@@ -1,10 +1,8 @@
-﻿using LibApp.Data;
-using LibApp.Models;
-using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore.Metadata.Internal;
-using AutoMapper;
+﻿using AutoMapper;
+using LibApp.Data;
 using LibApp.Dtos;
+using LibApp.Models;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
 namespace LibApp.Controllers.Api
@@ -34,7 +32,7 @@ namespace LibApp.Controllers.Api
         public IActionResult GetCustomer(int id)
         {
             var customer = _context.Customers.SingleOrDefault(c => c.Id == id);
-            if (customer == null) 
+            if (customer == null)
             {
                 return NotFound();
             }

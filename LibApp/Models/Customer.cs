@@ -5,7 +5,7 @@ namespace LibApp.Models
     public class Customer
     {
         public int Id { get; set; }
-        [Required(ErrorMessage ="Please enter customer's name")]
+        [Required(ErrorMessage = "Please enter customer's name")]
         [StringLength(100)]
         public string Name { get; set; }
         [Display(Name = "Date of Birth")]
@@ -15,8 +15,8 @@ namespace LibApp.Models
         public MembershipType MembershipType { get; set; }
 
         public bool HasNewsletterSubscribed { get; set; }
-        public Customer() 
-        { 
+        public Customer()
+        {
         }
     }
 }

@@ -10,7 +10,7 @@ namespace LibApp.Models
             if (customer.MembershipTypeId == MembershipType.PayAsYouGo)
             {
                 return ValidationResult.Success;
-            }    
+            }
 
             if (customer.Birthdate == null)
             {

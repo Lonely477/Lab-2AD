@@ -7,7 +7,7 @@ namespace LibApp.Models
     {
         public static void Initialize(IServiceProvider serviceProvider)
         {
-            using (var context = 
+            using (var context =
                 new ApplicationDbContext(
                     serviceProvider.GetRequiredService<
                         DbContextOptions<ApplicationDbContext>>()))
@@ -35,9 +35,9 @@ namespace LibApp.Models
                 if (!context.Books.Any())
                 {
                     context.Books.AddRange(
-                        new Book { Title = "Book 1", Author = "Author 1", GenreId = 1, DateAdded = DateTime.Now, NumberInStock = 3},
-                        new Book { Title = "Book 2", Author = "Author 2", GenreId = 2, DateAdded = DateTime.Now, NumberInStock = 1},
-                        new Book { Title = "Book 3", Author = "Author 3", GenreId = 3, DateAdded = DateTime.Now, NumberInStock = 2}
+                        new Book { Title = "Book 1", Author = "Author 1", GenreId = 1, DateAdded = DateTime.Now, NumberInStock = 3 },
+                        new Book { Title = "Book 2", Author = "Author 2", GenreId = 2, DateAdded = DateTime.Now, NumberInStock = 1 },
+                        new Book { Title = "Book 3", Author = "Author 3", GenreId = 3, DateAdded = DateTime.Now, NumberInStock = 2 }
                     );
                 }
 

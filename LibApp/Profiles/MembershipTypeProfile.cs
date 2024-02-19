@@ -6,7 +6,8 @@ namespace LibApp.Profiles
 {
     public class MembershipTypeProfile : Profile
     {
-        public MembershipTypeProfile() {
+        public MembershipTypeProfile()
+        {
             CreateMap<MembershipType, MembershipTypeDto>();
             CreateMap<MembershipTypeDto, MembershipType>();
         }

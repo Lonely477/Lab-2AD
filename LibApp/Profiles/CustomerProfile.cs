@@ -6,7 +6,7 @@ namespace LibApp.Profiles
 {
     public class CustomerProfile : Profile
     {
-        public CustomerProfile() 
+        public CustomerProfile()
         {
             CreateMap<Customer, CustomerDto>();
             CreateMap<CustomerDto, Customer>();
